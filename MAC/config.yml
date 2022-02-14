@@ -1,0 +1,18 @@
+nodes_num: 5  # 5 nodes 4 hops
+sending_rate: 100000000000 # SR on first node, 100Gbps
+batch_size: 600000 # 0.6Mb   10 batchs in 0.1 ms = 60 Gbps
+datasize: 10000000000 # 10 Gb
+mini_resolution: 0.0001 # 0.1 ms
+Tx_period: 0.002 # 2 ms
+
+buffersize_criterion: 500000000 # 0.5Gb
+buffersize_coefficent: [1,1,1,1,1] # [1,1,1,1,1], buffersize for each node
+delta_tau: 2000000000000    #10^13b per s --> 10000Gbps  --> 2 10^3Gb per 2ms
+link_criterion: 100000000000  # Max link capacity 100Gbps, aka 0.1 Tbps
+link_coefficent: [1,1,1,1] # [1,1,1,1] link_rate for each link
+
+
+buffer_obstruct_nums: 1  # nums of buffer_noise
+distance_array_nums: 100000 # N of rows of distance
+prediction_flag: 1 # predcition algorithm mode (1 or 0)
+mobility_flag: 0 # mobility mode (1 or 0)
