@@ -1,0 +1,4 @@
+dataset: P
+node_num: 5
+train_rate: 0.7
+antenna_gain: 1
